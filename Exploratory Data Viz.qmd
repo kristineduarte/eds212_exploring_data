@@ -1,0 +1,46 @@
+---
+title: "Day 4- Exploring Data"
+author: "Kristine Duarte"
+format: html
+editor: visual
+---
+
+```{r}
+#| warning: false
+#| echo: false
+
+library(tidyverse)
+library(palmerpenguins)
+library(GGally) #install.packages("GGally")
+library(skimr) #install.packages("skimr")
+
+#if packages don't work, remember to install packages in the consol and to use ""
+```
+
+#\| warning: false
+
+#\| echo: false echo means don't show me the code, but it will show the output
+
+putting them in the code (above) in Quarto can make this not show up in the rendered document
+
+## Exploratory Data Viz
+
+View() in consol will bring up the data set so you can look at it
+
+Check out your data a bit:
+
+```{r}
+#| include: false
+
+#Tell me the column names
+names(penguins)
+
+#What are the dimensions?
+dim(penguins)
+
+#Can you show me the first six lines?
+head(penguins)
+
+#Can you show me the last six lines? 
+tail(penguins)
+```
